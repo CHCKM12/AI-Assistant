@@ -1,6 +1,8 @@
-import os
+
 import streamlit as st
-# import your API calling code
+import os
+st.write("API KEY (shortened):", os.getenv("DEEPSEEK_API_KEY")[:5])
+
 import requests
 
 # Load env vars
