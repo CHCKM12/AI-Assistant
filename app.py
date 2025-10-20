@@ -1,7 +1,12 @@
+import os
+st.write("API KEY (shortened):", os.getenv("DEEPSEEK_API_KEY")[:5])\
 
 import streamlit as st
-import os
-st.write("API KEY (shortened):", os.getenv("DEEPSEEK_API_KEY")[:5])
+
+DEEPSEEK_API_KEY = st.secrets["DEEPSEEK_API_KEY"]
+
+
+
 
 import requests
 
